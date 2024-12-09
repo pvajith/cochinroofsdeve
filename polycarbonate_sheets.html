@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polycarbonate Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .product-box {
+            text-align: center;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+			
+    height: 250px;
+        }
+        .product-box:hover {
+            background-color: #e2e6ea;
+        }
+        table {
+            margin: 20px auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            text-align: center;
+            padding: 10px;
+        }
+		.solid-pencil-grey { background-color: #a9a9a9; } /* Approx. Pencil Grey */
+        .solid-bronze { background-color: #cd7f32; } /* Bronze */
+        .solid-clear { background-color: #d9d9d9; } /* Light Grey for Clear */
+        .solid-greenish-blue { background-color: #20b2aa; } /* Greenish Blue */
+
+        .diamond-pencil-grey { background-color: #a9a9a9; }
+        .diamond-bronze { background-color: #cd7f32; }
+        .diamond-clear { background-color: #d9d9d9; }
+        .diamond-greenish-blue { background-color: #20b2aa; }
+
+        .raindrop-pencil-grey { background-color: #a9a9a9; }
+        .raindrop-bronze { background-color: #cd7f32; }
+        .raindrop-clear { background-color: #d9d9d9; }
+        .raindrop-greenish-blue { background-color: #20b2aa; }
+
+        .maze-pencil-grey { background-color: #a9a9a9; }
+        .maze-bronze { background-color: #cd7f32; }
+        .maze-clear { background-color: #d9d9d9; }
+        .maze-greenish-blue { background-color: #20b2aa; }
+		.feature-box {
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+            background-color: #f8f9fa;
+			height: 250px;
+        }
+        .feature-box img {
+            width: 50px;
+            height: 50px;
+        }
+        .feature-box h5 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .feature-box p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+		h2.text-center.my-5 {
+    font-size: 50px;
+    font-family: emoji;
+}
+p.text {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 21px;
+    width: 66%;
+    margin-bottom: 92px;
+    margin-left: 20%;
+    margin-bottom: 55px;
+    /* margin: auto; */
+}
+.scrolled .header {
+    background-color: #daddede0 !important;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background-color: transparent !important;
+    color: var(--default-color);
+    transition: all 0.5s;
+    z-index: 997;
+    /* background-color: #c0bbe5 !important; */
+}
+@media (min-width: 768px) {
+.scrolled .header {
+    background-color: #daddede0 !important;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+.header {
+   // background-color: transparent !important;
+    color: var(--default-color);
+    transition: all 0.5s;
+    z-index: 997;
+     background-color: #c0bbe5 !important;
+}}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px!important;
+}
+h1.text-center.my-4 {
+    font-family: serif;
+    font-weight: bold;
+}
+    </style>
+</head>
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+<body>
+<header id="header" class="header sticky-top">
+
+    <!--<div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>--><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+           <a href="index.html" class="navbar-brand">
+		  <img class="logos" src="assets/img/logo-blacks.png" alt=""> 
+         
+              
+            </a>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active white">Home<br></a></li>
+            
+           
+            <!--<li><a href="#Poducts" class="white">Poducts</a></li>-->
+			<!-- <li><a href="#services" class="white">Services</a></li>-->
+            
+            <li class="dropdown"><a href="#" class="white"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="Centuryply.html" >Century ply</a></li>
+               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>-->
+                <li><a href="Everwood.html">Everwood</a></li>
+                <li><a href="corroshield.html">Corroshield</a></li>
+                <li><a href="realFastners.html">Real Fastners</a></li>
+              </ul>
+            </li>
+			<li><a href="project.html" class="white">Project</a></li>
+			<li><a href="#about" class="white">About</a></li>
+            <li><a href="#contact" class="white">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <!--<a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>-->
+
+      </div>
+
+    </div>
+
+  </header>
+    <div class="container">
+        <h1 class="text-center my-4">POLYCARBONATE SHEET</h1>
+
+        <!-- Product Images Section -->
+       <div class="row text-center">
+    <div class="col-md-3">
+        <div class="product-box">
+            <img src="assets/img/product_img/solidd.jfif" alt="Solid Image" class="img-fluid">
+            <p>SOLID</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="product-box">
+            <img src="assets/img/product_img/polycarbonate-solid-diamond-sheet.jpg" alt="Diamond Image" class="img-fluid">
+            <p>DIAMOND</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="product-box">
+            <img src="assets/img/product_img/rain.jpg" alt="Raindrop Image" class="img-fluid">
+            <p>RAINDROP</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="product-box">
+            <img src="assets/img/product_img/maze.jfif" alt="Maze Image" class="img-fluid">
+            <p>MAZE</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center my-5">Features</h2>
+    <p class="text">Offer durable and versatile polycarbonate sheets for roofing, skylights, greenhouse panels, safety barriers, and architectural glazing applications, available in different thicknesses and colors to suit different needs.</p>
+
+    <div class="row">
+        <!-- Feature 1: Durable Construction -->
+        <div class="col-md-6">
+            <div class="feature-box">
+                <img src="assets/img/product_img/hammer.png" alt="Durable Construction Icon">
+                <h5>Durable Construction</h5>
+                <p>Our polycarbonate sheets are engineered to withstand the toughest conditions, providing reliable protection against UV rays, impact resistance, and extreme weather conditions.</p>
+            </div>
+        </div>
+
+        <!-- Feature 2: Customizable Options -->
+        <div class="col-md-6">
+            <div class="feature-box">
+                <img src="assets/img/product_img/flexible.png" alt="Customizable Options Icon">
+                <h5>Customizable Options</h5>
+                <p>Tailor your project with our range of polycarbonate sheets available in different thicknesses and colors. From clear sheets that maximize light transmission to tinted options for enhanced privacy.</p>
+            </div>
+        </div>
+
+        <!-- Feature 3: Premium Quality -->
+        <div class="col-md-6">
+            <div class="feature-box">
+                <img src="assets/img/product_img/service.png" alt="Premium Quality Icon">
+                <h5>Premium Quality</h5>
+                <p>Experience premium quality polycarbonate sheets crafted from high-grade materials, ideal for both commercial and residential projects, offering exceptional clarity and durability.</p>
+            </div>
+        </div>
+
+        <!-- Feature 4: Tailored Solutions -->
+        <div class="col-md-6">
+            <div class="feature-box">
+                <img src="assets/img/product_img/solution.png" alt="Tailored Solutions Icon">
+                <h5>Tailored Solutions</h5>
+                <p>Customize your projects with our tailored polycarbonate solutions. Choose from a selection of thicknesses and colors to achieve the perfect balance of durability and design.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Product Specification -->
+        <h2 class="section-title">Product Specification</h2>
+        <table>
+            <tr>
+                <th>Thickness</th>
+                <td>1mm, 2mm, 3mm, 4mm, 6mm, 8mm, 10mm</td>
+            </tr>
+            <tr>
+                <th>Width</th>
+                <td>3ft, 4ft, 5ft, 6ft, 7ft</td>
+            </tr>
+            <tr>
+                <th>Length</th>
+                <td>100ft</td>
+            </tr>
+            <tr>
+                <th>Colors</th>
+                <td>Pencil Grey, Bronze, Clear, Greenish Blue, Other Colors</td>
+            </tr>
+        </table>
+
+        <!-- Available Colors Section -->
+        <h2 class="section-title">Available Colors</h2>
+       <div class="row">
+            <div class="col-md-3">
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/grey solid.jfif" alt="Solid Pencil Grey">
+                    <p>SOLID<br>PENCIL GREY</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/solidbronze.png" alt="Solid Bronze">
+                    <p>SOLID<br>BRONZE</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/clear.jfif" alt="Solid Clear">
+                    <p>SOLID<br>CLEAR</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/greenblue.png" alt="Solid Greenish Blue">
+                    <p>SOLID<br>GREENISH BLUE</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/diomandgrey.png" alt="Diamond Pencil Grey">
+                    <p>DIAMOND<br>PENCIL GREY</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/bronzediomand.jfif" alt="Diamond Bronze">
+                    <p>DIAMOND<br>BRONZE</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/diomandclear.jfif" alt="Diamond Clear">
+                    <p>DIAMOND<br>CLEAR</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/diomondgreenishblue.jfif"alt="Diamond Greenish Blue">
+                    <p>DIAMOND<br>GREENISH BLUE</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/raindrop.jfif" alt="Raindrop Pencil Grey">
+                    <p>RAINDROP<br>PENCIL GREY</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/rainbro.jfif" alt="Raindrop Bronze">
+                    <p>RAINDROP<br>BRONZE</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/raincler.jfif" alt="Raindrop Clear">
+                    <p>RAINDROP<br>CLEAR</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/raingree.jfif" alt="Raindrop Greenish Blue">
+                    <p>RAINDROP<br>GREENISH BLUE</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/mazsegrey.jpg" alt="Maze Pencil Grey">
+                    <p>MAZE<br>PENCIL GREY</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/mazebro.jpg"alt="Maze Bronze">
+                    <p>MAZE<br>BRONZE</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/mazeclear.jpg" alt="Maze Clear">
+                    <p>MAZE<br>CLEAR</p>
+                </div>
+                <div class="product-box">
+                    <img style="width:160px; height: 158px;"src="assets/img/product_img/mazeblugr.jpg" alt="Maze Greenish Blue">
+                    <p>MAZE<br>GREENISH BLUE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
